@@ -1,0 +1,18 @@
+<h1>Brands</h1>
+
+<table border="1">
+  <thead>
+    <tr>
+      <th>Id:</th>
+      <th>Name:</th>
+      <th>Created Date:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of viewModel.items">
+      <td>{{ item.id }}</td>
+      <td>{{ item.name }}</td>
+      <td>{{ item.createdDate }}</td>
+    </tr>
+  </tbody>
+</table>
